@@ -1,0 +1,22 @@
+<h1>Teams#league</h1>
+<p>Find me in app/views/teams/league.html.erb</p>
+
+<table>
+  <tr>
+    <th>Team Name</th>
+    <th>City</th>
+    <th>Conference</th>
+    <th>Wins</th>
+    <th>Losses</th>
+  </tr>
+  <tr>
+<% @teams.each do |team| %>
+<td><%= team.nickname %></td>
+<td><%= team.city %></td>
+<td><%= team.conference %></td>
+<td><%= team.wins %></td>
+<td><%= team.losses %></td></tr>
+
+<% end %>
+
+</table>

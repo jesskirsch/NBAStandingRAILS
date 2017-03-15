@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NbaStandings</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+<%= link_to "Western", western_path(@western) %>
+<%= link_to "League", league_path(@teams) %>
+<%= link_to "Eastern", eastern_path(@eastern) %>
+</body>
+</html>
